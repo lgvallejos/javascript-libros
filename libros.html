@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio libros</title>
+</head>
+<body>
+    
+    <form action="">
+    <input type="text" id="librob" placeholder="ingrese el titulo que desee buscar">
+    <input value="Buscar" type="button" onclick="
+        
+    for (i in libros) {
+
+          if (libros[i].toLowerCase() == document.getElementById('librob').value.toLowerCase() ) {
+
+              alert('libro disponible');
+              encontrado=true;
+              break;
+          }
+          else {
+
+            encontrado=false;
+            //console.log('libro no encontrado');
+          }
+        };
+
+        if (!encontrado) {alert('libro NO disponible');}
+
+    ">
+
+    <br>
+
+    </form>
+    
+
+    <script>
+       
+
+        var libros = ["Las aventuras de Sherlock Holmes", "Dr sueno","La resistencia", "El senor de los anillos", "El codigo Da Vinci", "kybalion", "harry potter"];
+        var encontrado=false;
+
+
+    </script>
+</body>
+</html>
